@@ -1,0 +1,30 @@
+﻿body, html, .main, .page {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    background-color: #dad2bc;
+}
+.page {
+    background: url('../images/bg4.jpg') no-repeat;
+}
+.heart {
+    width: 100%;
+    height: 525px;
+    position: absolute;
+    top: 50%;
+    margin-top: -262px;
+    left: 0;
+    background-image: url('../images/heart4.png');
+    text-align:center;
+}
+#userImg{
+    width:157px;
+    height:157px;
+    margin:228px auto 0 auto;
+    border-radius:5px;
+}
+.wxCode{
+    position:absolute;
+    bottom:0;
+}

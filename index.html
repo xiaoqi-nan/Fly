@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=720, user-scalable=no">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <title>有奖互动∣飞一飞，为爱赢机票</title>
+    <link href="css/public.css?v=1.0.1" rel="stylesheet" />
+    <link href="css/index.css?v=1.0.3" rel="stylesheet" />
+    <link href="css/place.css?v=1.0.1" rel="stylesheet" />
+</head>
+<body>
+    <div class="loading" id="loading">
+        <img src="images/loading.gif" class="imgLoading" />
+    </div>
+    <div class="main">
+        <!--首页-->
+        <div class="page" id="homePage">
+            <div class="title"></div>
+            <div class="imgMapItem">
+                <img class="imgMap" src="images/bg.png" />
+                <div class="item">
+                    <div class="smallIcon icon1"></div>
+                    <div class="smallIcon icon2"></div>
+                    <div class="smallIcon icon3"></div>
+                    <div class="smallIcon icon4"></div>
+                    <div class="smallIcon icon5"></div>
+                    <div class="smallIcon icon6"></div>
+                    <div class="bigIcon icon7"></div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="btnBegin" onclick="beginFn('sexPage')">开始游戏</div>
+                <div class="readItem" onclick="chooseFn(this)">
+                    <div class="readIcon"></div>
+                    <div class="readInfo">我已阅读</div>
+                </div>
+                <div class="explain" onclick="explainFn()">游戏说明及详情</div>
+            </div>
+        </div>
+        <!--游戏说明页-->
+        <div class="page" id="explainPage">
+            <div class="top">
+                游戏说明及活动条款
+                <div class="explainClose" onclick="pageToggle('homePage')"></div>
+            </div>
+            <div class="explainInfo">
+                <img src="images/explainInfo1.png" />
+            </div>
+        </div>
+        <!--选择男女-->
+        <div class="page" id="sexPage">
+            <div class="title"></div>
+            <div class="chooseItem">
+                <div class="sex" id="girl" onclick="chooseSexFn('routePage',this)"></div>
+                <div class="sex" id="boy" onclick="chooseSexFn('routePage',this)"></div>
+            </div>
+        </div>
+        <!--选择路线-->
+        <div class="page" id="routePage">
+            <div class="routeItem">
+                <img class="tip tip1" src="images/1.png" />
+                <img class="tip tip2" src="images/2.png" />
+                <img class="tip tip3" src="images/3.png" />
+                <img id="sex" src="images/girl2.png" />
+            </div>
+            <div class="routeBtnItem">
+                <div class="routeBtn" id="send_1" onclick="sendFn(this,'destinationPop')">送父母</div>
+                <div class="routeBtn" id="send_2" onclick="sendFn(this,'destinationPop')">送爱人</div>
+                <div class="routeBtn" id="send_3" onclick="sendFn(this,'destinationPop')">送好友</div>
+            </div>
+        </div>
+        <!--选择目的地弹层-->
+        <div class="page pop" id="destinationPop">
+            <div class="itemPop destinationItem">
+                <div class="popClose" id="destinationClose" onclick="pageToggle('routePage')"></div>
+                <div class="info">根据目的地飞行距离<br>决定按住“飞一飞”按钮的时间<br>挑战成功可充满部分爱心</div>
+                <div class="destinationSelect">
+                    <span id="cityInfo">请选择您的出发地</span>
+                    <div class="downIcon"></div>
+                    <select id="city">
+                        <option value="0">请选择您的出发地</option>
+                        <option value="1">北京</option>
+                        <option value="2">上海</option>
+                        <option value="3">南京</option>
+                        <option value="4">厦门</option>
+                        <option value="5">宁波</option>
+                        <option value="6">广州</option>
+                        <option value="7">成都</option>
+                        <option value="8">昆明</option>
+                        <option value="9">杭州</option>
+                        <option value="10">桂林</option>
+                        <option value="11">武汉</option>
+                        <option value="12">海口</option>
+                        <option value="13">温州</option>
+                        <option value="14">福州</option>
+                        <option value="15">郑州</option>
+                        <option value="16">重庆</option>
+                        <option value="17">长沙</option>
+                        <option value="18">青岛</option>
+                        <option value="19">南宁</option>
+                        <option value="20">三亚</option>
+                        <option value="21">西安</option>
+                    </select>
+                </div>
+                <div class="cityError"></div>
+                <div class="btnConfirm">确&nbsp;&nbsp;&nbsp;认</div>
+            </div>
+        </div>
+        <!--主页-->
+        <div class="page" id="gamePage">
+            <div class="gameItem">
+                <div class="station">第一站</div>
+                <div class="stationName">香港赏花车</div>
+                <div class="game">
+                    <div class="compass"></div>
+                    <div class="bigMap" id="bigMap">
+                        <!--<img id="img" src="images/bg5.png" style="display:none" />-->
+                        <!--<div class="tipIcon place1">
+                            <span>北京</span>
+                        </div>
+                        <div class="tipIcon place2">
+                            <span>上海</span>
+                        </div>
+                        <div class="tipIcon place3">
+                            <span>南京</span>
+                        </div>
+                        <div class="tipIcon place4">
+                            <span>厦门</span>
+                        </div>
+                        <div class="tipIcon place5">
+                            <span>宁波</span>
+                        </div>
+                        <div class="tipIcon place6">
+                            <span>广州</span>
+                        </div>
+                        <div class="tipIcon place7">
+                            <span>成都</span>
+                        </div>
+                        <div class="tipIcon place8">
+                            <span>昆明</span>
+                        </div>
+                        <div class="tipIcon place9">
+                            <span>杭州</span>
+                        </div>
+                        <div class="tipIcon place10">
+                            <span>桂林</span>
+                        </div>
+                        <div class="tipIcon place11">
+                            <span>武汉</span>
+                        </div>
+                        <div class="tipIcon place12">
+                            <span>海口</span>
+                        </div>
+                        <div class="tipIcon place13">
+                            <span>温州</span>
+                        </div>
+                        <div class="tipIcon place14">
+                            <span>福州</span>
+                        </div>
+                        <div class="tipIcon place15">
+                            <span>郑州</span>
+                        </div>
+                        <div class="tipIcon place16">
+                            <span>重庆</span>
+                        </div>
+                        <div class="tipIcon place17">
+                            <span>长沙</span>
+                        </div>
+                        <div class="tipIcon place18">
+                            <span>青岛</span>
+                        </div>
+                        <div class="tipIcon place19">
+                            <span>南宁</span>
+                        </div>
+                        <div class="tipIcon place20">
+                            <span>三亚</span>
+                        </div>-->
+                        <div class="tipIcon place22">
+                            <span>东京</span>
+                        </div>
+                        <div class="tipIcon place23">
+                            <span>墨尔本</span>
+                        </div>
+                        <div class="tipIcon place24">
+                            <span>科伦坡</span>
+                        </div>
+                        <div class="tipIcon place25">
+                            <span>洛杉矶</span>
+                        </div>
+                        <div class="tipIcon place26">
+                            <span>暹粒</span>
+                        </div>
+                        <div class="tipIcon place27">
+                            <span>都柏林</span>
+                        </div>
+                        <div class="tipIcon place28">
+                            <span>香港</span>
+                        </div>
+                    </div>
+                    <!--<canvas id="canvas" classs="canvasItem1" width="720" height="564"></canvas>-->
+                    <div class="canvasItem">
+                        <img id="userHeadImg" />
+                        <div class="planeItem" id="planeItem">
+                            <div id="plane"></div>
+                        </div>
+                    </div>
+                    <div class="canvas canvas1"></div>
+                    <div class="canvas canvas2" id="canvas2"></div>
+                </div>
+                <div class="gameLine">
+                    <div class="gameFill"></div>
+                    <div class="heartIcon"></div>
+                </div>
+                <div class="btnFly" id="btnFly">飞一飞</div>
+            </div>
+        </div>
+        <!--挑战成功-->
+        <div class="page pop" id="successPage">
+            <div class="itemPop">
+                <!--<div class="popClose" id="successClose"></div>-->
+                <div class="successInfo">飞跃成功!<br>爱拼才会赢，快去挑战最后一关!</div>
+                <div class="heartFill heartFill1">
+                </div>
+                <div class="btn" id="btnGoon" onclick="goonFn()">继续“飞一飞”</div>
+            </div>
+        </div>
+        <!--挑战失败-->
+        <div class="page pop" id="failPage">
+            <div class="itemPop">
+                <div class="popClose" id="failClose" onclick="restartFn()"></div>
+                <div class="failInfo">很抱歉，您偏离了航线<br>爱真的需要勇气，再接再厉吧!</div>
+                <div class="heartFill">
+                </div>
+                <div class="btn" id="btnRestart" onclick="restartFn()">重新开始</div>
+            </div>
+        </div>
+        <!--填写信息-->
+        <div class="page" id="fillInfo">
+            <div class="fillTitle">爱心满满&nbsp;!</div>
+            <div class="fillItem">
+                <div class="inputItem">
+                    <input type="text" class="txtInut" id="name" placeholder="姓  　    名" onfocus="this.placeholder=''" onblur="this.placeholder='姓  　    名'" />
+                </div>
+                <div class="inputItem">
+                    <input type="text" class="txtInut" id="phone" placeholder="联 系 方 式" onfocus="this.placeholder=''" onblur="this.placeholder='联 系 方 式'" maxlength="11" />
+                </div>
+                <div class="inputItem">
+                    <div class="terminalItem">
+                        <span id="terminal">出 发 航 站</span>
+                        <div class="downIcon"></div>
+                        <select id="terminalSelect">
+                            <option value="0">出 发 航 站</option>
+                            <option value="1">北京</option>
+                            <option value="2">上海</option>
+                            <option value="3">南京</option>
+                            <option value="4">厦门</option>
+                            <option value="5">宁波</option>
+                            <option value="6">广州</option>
+                            <option value="7">成都</option>
+                            <option value="8">昆明</option>
+                            <option value="9">杭州</option>
+                            <option value="10">桂林</option>
+                            <option value="11">武汉</option>
+                            <option value="12">海口</option>
+                            <option value="13">温州</option>
+                            <option value="14">福州</option>
+                            <option value="15">郑州</option>
+                            <option value="16">重庆</option>
+                            <option value="17">长沙</option>
+                            <option value="18">青岛</option>
+                            <option value="19">南宁</option>
+                            <option value="20">三亚</option>
+                            <option value="21">西安</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputItem">
+                    <input type="text" class="txtInut" id="address" placeholder="邮 寄 地 址" onfocus="this.placeholder=''" onblur="this.placeholder='邮 寄 地 址'" />
+                </div>
+                <div class="blueInfo">请正确填写以上信息，以便参与抽奖</div>
+                <div class="error"></div>
+            </div>
+
+            <div class="btnSubmit" id="btnSubmit">确认提交</div>
+        </div>
+        <!--信息提交成功-->
+        <div class="page" id="fillSuccess">
+            <div class="fillTitleItem">
+                <div class="successTitle">提交成功&nbsp;!</div>
+                <div class="saveImgInfo"></div>
+            </div>
+            <div class="imgItem" id="imgItem">
+            </div>
+            <div class="btnGoback">返回首页</div>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jweixin-1.0.0.js"></script>
+    <script src="js/MMXChina.js"></script>
+    <script src="js/weixinSdk.js"></script>
+    <script src="js/getParam.js"></script>
+    <script src="js/resLoader.js"></script>
+    <script src="js/city.js?v=10.1"></script>
+    <script src="js/GameInfo.js"></script>
+    <script id="index" src="js/index.js?v=10.8"></script>
+    <!--<script>
+        $('#index').attr('src', 'js/index.js?v=' + Math.random() * 100);
+    </script>-->
+</body>
+</html>

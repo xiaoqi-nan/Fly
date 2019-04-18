@@ -1,0 +1,93 @@
+﻿body {
+    margin: 0 0;
+    font-family:'Microsoft YaHei',Arial;
+    background-color:#fff;
+}
+
+/*去掉谷歌的样式*/
+input, button, select, textarea {
+    outline: none;
+    margin-left: 0px;
+}
+
+a:hover {
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+
+
+div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img {
+    vertical-align: middle;
+}
+
+    img:not([src*="/"]) {
+        display: none;
+    }
+
+/*chrome滚动条*/
+::-webkit-scrollbar-track-piece {
+    -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #D0CFD5;
+    -webkit-border-radius: 4px;
+    outline-offset: -2px;
+    border: 2px solid #D0CFD5;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        height: 50px;
+        background-color: #D0CFD5;
+        -webkit-border-radius: 4px;
+    }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #777979;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #777979;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #777979;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #777979;
+}
+.loading {
+    width: 720px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+}
+
+.imgLoading {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}

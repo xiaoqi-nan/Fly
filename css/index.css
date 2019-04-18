@@ -1,0 +1,778 @@
+﻿body, html, .main, .page {
+    width: 100%;
+    height: 100%;
+}
+
+#explainPage, #sexPage, #routePage, #successPage, #failPage, #fillInfo, #fillSuccess, #gamePage {
+    display: none;
+}
+
+.main {
+    width: 720px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #dad2bc;
+    display:none;
+}
+
+.page {
+    overflow: hidden;
+    position: relative;
+}
+
+#homePage {
+    background: url('../images/bg3.jpg') no-repeat;
+}
+#gamePage{
+
+}
+.imgMap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}.title {
+    width: 720px;
+    height: 153px;
+    background-image: url('../images/title.png');
+    margin-top: 118px;
+}
+.imgMapItem {
+    width:100%;
+    height:1080px;
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-540px;
+}.item {
+    width: 100%;
+    height: 290px;
+    margin-top: 420px;
+    position: relative;
+}
+
+.smallIcon, .bigIcon {
+    width: 14px;
+    height: 18px;
+    background-image: url('../images/tip.png');
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 1;
+    -webkit-transform-origin: 50% 100%;
+    background-size:100% 100%;
+}
+
+.icon1 {
+    top: 0px;
+    left: 48px;
+    -webkit-animation: iconAni 1.8s ease-out normal infinite;
+}
+
+.icon2 {
+    top: 140px;
+    left: 260px;
+    -webkit-animation: iconAni 1.8s 0.1s ease-out normal infinite;
+}
+
+.icon3 {
+    top: 124px;
+    left: 328px;
+    -webkit-animation: iconAni 1.8s 0.7s ease-out normal infinite;
+}
+
+.icon4 {
+    top: 64px;
+    right: 308px;
+    -webkit-animation: iconAni 1.8s 0.3s ease-out normal infinite;
+}
+
+.icon5 {
+    top: 266px;
+    right: 288px;
+    -webkit-animation: iconAni 1.8s 0.5s ease-out normal infinite;
+}
+
+.icon6 {
+    top: 65px;
+    right: 52px;
+    -webkit-animation: iconAni 1.8s 0.4s ease-out normal infinite;
+}
+
+.bigIcon {
+    width: 26px;
+    height: 35px;
+}
+
+.icon7 {
+    top: 78px;
+    left: 336px;
+    -webkit-animation: iconAni 2s 0.6s ease-out normal infinite;
+}
+
+.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+}
+
+.btnBegin, .btnConfirm, .btn, .btnSubmit {
+    width: 282px;
+    height: 82px;
+    margin: 0 auto;
+    background-color: #016565;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 82px;
+    font-size: 31px;
+    color: #fff;
+}
+
+.readItem {
+    overflow: hidden;
+    margin: 43px 0 10px 250px;
+}
+
+.readIcon {
+    width: 24px;
+    height: 24px;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url('../images/checked.png');
+}
+
+.readInfo {
+    float: left;
+    font-size: 20px;
+    color: #515151;
+    line-height: 24px;
+    margin-left: 48px;
+}
+
+.unchecked {
+    background-image: url('../images/unchecked.png');
+}
+
+.explain {
+    text-align: center;
+    font-size: 20px;
+    color: #515151;
+    text-decoration: underline;
+}
+
+#explainPage {
+    background-color: #e0e8e7;
+}
+
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 28px;
+}
+
+.explainClose, .popClose {
+    width: 70px;
+    height: 70px;
+    background-image: url('../images/close.png');
+    position: absolute;
+    top: 12px;
+    right: 36px;
+}
+
+.explainInfo {
+    margin-top: 56px;
+}
+
+    .explainInfo img {
+        width: 100%;
+    }
+
+#sexPage, #routePage {
+    background-image: url('../images/bg3.jpg');
+}
+
+.chooseItem {
+    width: 100%;
+    height: 408px;
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+}
+
+.sex {
+    width: 293px;
+    height: 407px;
+    float: left;
+}
+
+#girl {
+    margin: 0 20px 0 58px;
+    background-image: url('../images/girl.png');
+}
+
+#boy {
+    background-image: url('../images/boy.png');
+}
+
+.routeItem {
+    width: 100%;
+    height: 746px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -430px;
+}
+
+.tip {
+    position: absolute;
+    opacity: 0;
+}
+
+.tip1 {
+    top: 92px;
+    left: 38px;
+    -webkit-animation: tipAni 2s ease-out normal both;
+}
+
+.tip2 {
+    top: 0;
+    left: 300px;
+    -webkit-animation: tipAni 2s 1s ease-out normal both;
+}
+
+.tip3 {
+    right: 31px;
+    top: 373px;
+    -webkit-animation: tipAni 2s 2s ease-out normal both;
+}
+
+#sex {
+    margin-top: 230px;
+}
+
+.routeBtnItem {
+    width: 100%;
+    position: absolute;
+    bottom: 102px;
+    left: 0;
+    opacity: 0;
+    -webkit-animation: tipAni 1.5s 3s ease-out normal both;
+}
+
+.routeBtn {
+    width: 210px;
+    height: 82px;
+    text-align: center;
+    line-height: 82px;
+    border-radius: 10px;
+    color: #fff;
+    float: left;
+    font-size: 31px;
+    background-color: #016565;
+}
+
+#send_1 {
+    margin-left: 38px;
+}
+
+#send_2 {
+    margin: 0 9px;
+}
+
+.pop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#destinationPop {
+    display: none;
+    opacity: 1;
+}
+
+#gamePage {
+    background-color: #f1f1f1;
+}
+
+.itemPop {
+    width: 612px;
+    height: 612px;
+    background-color: rgba(0,0,0,0.4);
+    /*margin: 228px auto 0 auto;*/
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-306px 0 0 -306px;
+    
+}
+
+.info {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-top: 176px;
+}
+
+.destinationSelect {
+    width: 535px;
+    height: 75px;
+    margin: 52px auto 0 auto;
+    color: #777979;
+    font-size: 31px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+}
+
+#cityInfo {
+    width: 100%;
+    height: 100%;
+    line-height: 75px;
+}
+
+#city {
+    width: 100%;
+    height: 73px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #777979;
+    font-size: 31px;
+    font-family: 'Microsoft YaHei',Arial;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.popClose {
+    top: 10px;
+    right: 5px;
+}
+
+.gameItem {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.station {
+    font-size: 24px;
+    color: #040000;
+    margin: 84px 0 22px 0;
+}
+
+.stationName {
+    font-size: 42px;
+    color: #016565;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.game {
+    width: 100%;
+    height: 564px;
+    border-top: 1px solid #d5d3c8;
+    border-bottom: 1px solid #d5d3c8;
+    margin-top: 36px;
+    background-image: url('../images/bg3.jpg');
+    overflow: hidden;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.gameLine {
+    width: 652px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: #dad2bc;
+    position: relative;
+    margin: 48px auto 0 auto;
+}
+
+.heartIcon {
+    width: 33px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -16px;
+    background-image: url('../images/heart.png');
+}
+
+.btnFly, .btnGoback {
+    width: 282px;
+    height: 82px;
+    text-align: center;
+    line-height: 82px;
+    color: #fff;
+    letter-spacing: 10px;
+    border-radius: 10px;
+    background-color: #016565;
+    position: absolute;
+    bottom: 102px;
+    left: 50%;
+    margin-left: -141px;
+    font-size: 31px;
+}
+
+.successInfo, .failInfo {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    line-height: 48px;
+    letter-spacing: 3px;
+}
+
+.heartFill {
+    width: 260px;
+    height: 219px;
+    background-image: url('../images/heart2.png');
+    margin: 26px auto 26px auto;
+}
+.heartFill1 {
+    width: 500px;
+    height: 500px;
+    margin: 26px auto 26px auto;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 20px;
+    left: 56px;
+}.h1 {
+    background-image: url('../images/h1.gif');
+    top: 100px;
+}
+.h2 {
+    background-image: url('../images/h2.gif');
+}
+
+.btn {
+    letter-spacing: 5px;
+}
+
+#btnGoon {
+    padding-left: 10px;
+    position:absolute;
+    bottom:58px;
+    left:50%;
+    margin-left:-141px;
+}
+
+#fillInfo {
+    background-image: url('../images/bg4.jpg');
+}
+
+.fillTitle, .successTitle {
+    font-size: 64px;
+    color: #016565;
+    text-align: center;
+    padding-top: 182px;
+    font-weight: bold;
+}
+
+.inputItem {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.txtInut, .terminalItem {
+    height: 75px;
+    width: 535px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 31px;
+    color: #777979;
+    font-family:"微软雅黑",Arial;
+}
+
+.terminalItem {
+    position: relative;
+    margin: 0 auto;
+}
+
+#terminal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #777979;
+    text-align: center;
+    line-height: 75px;
+}
+
+#terminalSelect {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 31px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #777979;
+}
+
+.downIcon {
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    top:50%;
+    margin-top:-12px;
+    right: 22px;
+    background-image: url('../images/down.png');
+    background-size: 100% 100%;
+}
+
+.blueInfo {
+    font-size: 24px;
+    color: #016565;
+    text-align: center;
+}
+
+.fillItem {
+    width: 100%;
+    height: 434px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -217px;
+}
+
+.btnSubmit {
+    position: absolute;
+    bottom: 102px;
+    left: 50%;
+    margin-left: -141px;
+}
+
+.error {
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    margin-top: 30px;
+    height: 31px;
+}
+
+#fillSuccess {
+    text-align: center;
+    background-image: url('../images/bg4.jpg');
+}
+
+.saveImgInfo {
+    width: 281px;
+    height: 34px;
+    margin: 15px auto 0 auto;
+    background-image: url('../images/saveImg.png');
+}
+
+.imgItem {
+    width: 100%;
+    height: 100%;
+}
+/*.imgItem img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -540px;
+    }*/
+.fillTitleItem {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    top: 302px;
+    left: 0;
+}
+
+.successTitle {
+    padding-top: 164px;
+}
+
+.userImg {
+    width: 148px;
+    height: 148px;
+    position: absolute;
+    top: 509px;
+    left: 193px;
+    border-radius: 5px;
+}
+
+.bigMap {
+    width: 8000px;
+    height: 4260px;
+    transform: scale(0.089);
+    transform-origin: 0% 0%;
+    margin-top: 84px;
+    position: relative;
+    transition: all 2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-image: url('../images/4.svg');
+    /*background-image: url('../images/big8.png');*/
+    background-size: 100% 100%;
+}
+
+    .bigMap img {
+        width: 100%;
+        height: 100%;
+    }
+
+.tipIcon {
+    width: 38px;
+    height: 51px;
+    background-image: url('../images/bigTip.png');
+    position: absolute;
+    transform-origin: 50% 100%;
+    background-size: 100% 100%;
+    display: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.canvasItem {
+    width:720px;
+    height:564px;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    opacity:0;
+    z-index:10;
+}.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*border: 2px solid red;*/
+}
+.planeItem {
+    width: 66px;
+    height: 63px;
+    position: absolute;
+    opacity: 1;
+}
+#plane {
+    width: 66px;
+    height: 63px;
+    background-image: url('../images/plane.png');
+    -webkit-transform-origin: 50% 50%;
+}
+.planeAni1 {
+    -webkit-animation: planeAni1 1.5s linear infinite;
+}
+@-webkit-keyframes planeAni1{
+    0%{
+        -webkit-transform:scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+.tipIcon span {
+    font-size: 25px;
+    color: #016565;
+    font-weight: bold;
+    width: 106px;
+    position: absolute;
+    left: 50%;
+    margin: 54px 0 0 -50px;
+    -webkit-backface-visibility: hidden;
+}
+
+.place28 span, .place22 span, .place23 span, .place24 span, .place25 span, .place26 span, .place27 span {
+    margin-top: 84px;
+}
+
+.compass {
+    width: 91px;
+    height: 93px;
+    background-image: url('../images/compass.png');
+    position: absolute;
+    top: 24px;
+    left: 58px;
+    transition: all 1.8s;
+}
+
+.cityError {
+    font-size: 22px;
+    height: 31px;
+    text-align: center;
+    color: red;
+    margin: 20px 0;
+}
+
+#userHeadImg {
+    width: 82px;
+    height: 82px;
+    border-radius: 50px;
+    position: absolute;
+    top: 248px;
+    left: 355px;
+}
+
+@-webkit-keyframes iconAni {
+    0% {
+        -webkit-transform: scale(1.1);
+    }
+
+    50% {
+        -webkit-transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1);
+    }
+}
+
+@-webkit-keyframes tipAni {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.gameFill {
+    width: 0%;
+    height: 100%;
+    background-color: #c0b497;
+}
+.transform{
+    -webkit-transform:translate3d(-4014px,-2782px,0) scale(0.9) rotate(240deg);
+    -webkit-transform-origin:50% 50%;
+    margin-top:0;
+}
+.cityItem{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}

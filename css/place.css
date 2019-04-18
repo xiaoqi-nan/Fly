@@ -1,0 +1,137 @@
+﻿.place1 {
+    top: 1664px;
+    left: 2842px;
+}
+.place28 {
+    width: 58px;
+    height: 78px;
+    top: 2114px;
+    left: 2842px;
+    background-image: url('../images/bigTip.png');
+}
+.place2{
+    top:1928px;
+    left:2986px;
+}
+.place3{
+    top:1894px;
+    left:2916px;
+}
+.place4{
+    top:2100px;
+    left:2936px;
+}
+.place5{
+    top:1960px;
+    left:3020px;
+}
+.place6{
+    top:2078px;
+    left:2792px;
+}
+.place7{
+    top:1936px;
+    left:2566px;
+}
+.place8{
+    top:2089px;
+    left:2550px;
+}
+.place9{
+    top:1956px;
+    left:2962px;
+}
+.place10{
+    top:2032px;
+    left:2722px;
+}
+.place11 {
+    top: 1908px;
+    left: 2842px;
+}
+.place12{
+    top:2210px;
+    left:2760px;
+}
+.place13{
+    top:2010px;
+    left:2994px;
+}
+.place14{
+    top:2043px;
+    left:2964px;
+}
+.place15{
+    top:1826px;
+    left:2784px;
+}
+.place16 {
+    top: 1968px;
+    left: 2616px;
+}
+.place17{
+    top:1964px;
+    left:2786px;
+}
+.place18{
+    top:1781px;
+    left:2972px;
+}
+.place19{
+    top:2089px;
+    left:2692px;
+}
+.place20 {
+    top: 2247px;
+    left: 2750px;
+}
+.place21 {
+    top: 1838px;
+    left: 2626px;
+}
+.place22 {
+    top: 1790px;
+    left: 3358px;
+    width: 58px;
+    height: 78px;
+    background-image: url('../images/bigTip.png');
+}
+.place23 {
+    top: 3640px;
+    left: 3540px;
+    width: 58px;
+    height: 78px;
+    background-image: url('../images/bigTip.png');
+}
+.place24 {
+    top: 2492px;
+    left: 2110px;
+    width: 58px;
+    height: 78px;
+    background-image: url('../images/bigTip.png');
+}
+.place25 {
+    top: 1826px;
+    left: 5686px;
+    width: 58px;
+    height: 78px;
+    background-image: url('../images/bigTip.png');
+}
+.place26 {
+    width: 58px;
+    height: 78px;
+    background-image: url('../images/bigTip.png');
+    top: 2344px;
+    left: 2714px;
+}
+.place27 {
+    top:1222px;
+    left:190px;
+    width: 58px;
+    height: 78px;
+    background-image: url('../images/bigTip.png');
+}
+    .place23 span, .place24 span, .place25 span, .place27 span {
+        text-align: right;
+        margin-left: -30px;
+    }
